@@ -33,6 +33,8 @@ main {
 .title {
 	background: #f06502;
 	display: inline-block;
+	border: none;
+	margin-left: 0;
 	padding: 10px;
 	color: white;
 	border-top-right-radius: var(--border-radius);
@@ -45,12 +47,19 @@ main {
 	border-top-left-radius: 0;
 
 }
-section {
-	margin: 50px; 
-}
+
 .output {
+	margin-top: 50px;
 	background: #f7ede9;
 	padding: 20px;
 	border-radius: var(--border-radius); 
 	visibility: hidden;
+}
+
+.ftToCm {
+	display: block;
+
+}
+.cmToFt {
+	display: none;
 }

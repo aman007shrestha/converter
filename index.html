@@ -8,22 +8,35 @@
 </head>
 <body>
 	<div class="container">
+		<h1>Height Converter</h1>
+		<div class="btnContainer">
+				<button class="title buttonFtIn">Feet and inches to cm.</button>
+				<button class="title buttoncm">cm to Feet and inches.</button>
+		</div>
 		<section>
-			<h1>Height Converter</h1>
-			<div class="title">Feet and inches to cm.</div>
-			<div class="converter">
+			<div class="converter ftToCm">
 
 				<input type="number" name="feet" id="feet">
 				<span>feet</span>
 				<input type="number" name="inch" id="inch">
 				<span>inch</span>
 				<br>
-				<button class="convert">Submit</button>
+				<button class="convert ftConversion">Submit</button>
+			</div>
+
+			<div class="converter cmToFt">
+				<input type="number" name="cm" id="cm">
+				<span>cm</span>
+	
+				<br>
+				<button class="convert cmConversion">Submit</button>
+				
 			</div>
 		</section>
+		
 		<section class="output">
 		
-			the equivalent result is <span id=result>0</span>cm.
+			the equivalent result is <span id=result>0</span>
 		</section>
 	</div>
 	
