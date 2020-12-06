@@ -31,7 +31,7 @@ main {
 	margin: 2rem 0;
 }
 .title {
-	background: #f06502;
+	background: #636362;
 	display: inline-block;
 	border: none;
 	margin-left: 0;
@@ -39,6 +39,9 @@ main {
 	color: white;
 	border-top-right-radius: var(--border-radius);
 	border-top-left-radius: var(--border-radius);
+}
+.title:hover {
+
 }
 .converter {
 	background: #f7ede9;
@@ -54,6 +57,13 @@ main {
 	padding: 20px;
 	border-radius: var(--border-radius); 
 	visibility: hidden;
+}
+
+.active {
+	background: #f06502;
+}
+.active:hover {
+	background: #ed7e2f;
 }
 
 .ftToCm {

@@ -61,12 +61,21 @@ const feetToCmView = document.querySelector(".ftToCm");
 const cmToFeetView = document.querySelector(".cmToFt");
 
 // display or hide view
-feetToCmBtn.addEventListener("click", function(){
+feetToCmBtn.addEventListener("click", function(e){
 	cmToFeetView.style.display = "none";
 	feetToCmView.style.display="block";
+	console.log(e.currentTarget.classList);
+	e.currentTarget.classList.add("active");
+	cmToFeetBtn.classList.remove("active");
+
 });
-cmToFeetBtn.addEventListener("click", function(){
+cmToFeetBtn.addEventListener("click", function(e){
 	feetToCmView.style.display="none";
 	cmToFeetView.style.display = "block";
+	e.currentTarget.classList.add("active");
+	feetToCmBtn.classList.remove("active");
 });
 
+
+
+// change button activation
